@@ -1,0 +1,454 @@
+/* Calculating the font sizes */
+
+@media (min-width: 768px) {
+    html {
+        font-size: calc(0.75rem + ((1vw - 7.68px) * 0.6944));
+        min-height: 0vw;
+    }
+    h1 {
+        font-size: calc(2.5rem + ((1vw - 7.68px) * 3.4722));
+        min-height: 0vw;
+    }
+    h2 {
+        font-size: calc(2.5rem + ((1vw - 7.68px) * 1.7361));
+        min-height: 0vw;
+    }
+    h3 {
+        font-size: calc(1.25rem + ((1vw - 7.68px) * 1.7361));
+        min-height: 0vw;
+    }
+    h4 {
+        font-size: calc(1.25rem + ((1vw - 7.68px) * 1.7361));
+        min-height: 0vw;
+    }
+    h5 {
+        font-size: calc(0.625rem + ((1vw - 7.68px) * 0.8681));
+        min-height: 0vw;
+    }
+    h6 {
+        font-size: calc(0.0625rem + ((1vw - 7.68px) * 0.3472));
+        min-height: 0vw;
+    }
+}
+
+@media (min-width: 1920px) {
+    html {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 10px;
+    }
+    h6 {
+        font-size: 5px;
+    }
+}
+
+html,
+body {
+    margin: 0;
+}
+
+div {
+    max-width: 100%;
+    width: 80%;
+    vertical-align: middle;
+}
+
+section {
+    padding-bottom: 75px;
+    padding-top: 75;
+}
+
+html {
+    height: auto;
+    scroll-behavior: smooth;
+}
+
+
+/* Styling the heading */
+
+.header {
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    font-display: inherit;
+}
+
+.heading {
+    overflow: hidden;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+
+/* Styling the left side of the menu */
+
+.meny-row-left {
+    width: 20%;
+    display: inline-block;
+    height: 100%;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin-top: 50px;
+}
+
+
+/* Styling the right side of the menu */
+
+.meny-row-middle {
+    width: 70%;
+    display: inline-block;
+    height: 100%;
+}
+
+.meny-row-right {
+    width: 10%;
+    display: inline-block;
+    height: 100%;
+}
+
+
+/* Styling the menu buttons */
+
+.meny-knapper {
+    color: #000;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.navbar {
+    margin-top: 75px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+
+.active,
+.meny-knapper:hover {
+    color: red;
+}
+
+
+/* Creating a full site container */
+
+.site-container {
+    width: 100%;
+}
+
+
+/* Styling the breadcrumb */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+
+/* Display all breadcrumbs items side by side */
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+
+/* Add a (/) before/behind each breadcrumb item */
+
+ul.breadcrumb li+li:before {
+    padding: 18px;
+    color: black;
+    content: "/\00a0";
+}
+
+
+/* Add a color to all links inside the list */
+
+ul.breadcrumb li a {
+    color: black;
+}
+
+
+/* Add a hover effect (Color when mouse over) on all breadcrumbs */
+
+ul.breadcrumb li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* Creating the Image border and making it transparent with a hover effect. */
+
+.img {
+    border: solid;
+    object-fit: cover;
+    align-self: center;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.img:hover {
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+
+/* Styling the program button */
+
+.btn-program {
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: red;
+}
+
+.btn-program:hover {
+    box-shadow: 1px 1px;
+}
+
+.btn-program a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Creating a container  */
+
+.container {
+    width: 80%;
+}
+
+.left-column {
+    width: 50%;
+    float: left;
+}
+
+.right-column {
+    float: right;
+    width: 50%;
+}
+
+.img-txt-heading {
+    text-align: center;
+}
+
+.img-txt {
+    text-align: left;
+    width: 80%;
+}
+
+.kontakt-skjema {
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    overflow: hidden;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.footer-left {
+    vertical-align: bottom;
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+}
+
+.footer-middle {
+    vertical-align: bottom;
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+}
+
+.footer-right {
+    vertical-align: bottom;
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+}
+
+.back-to-top {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: red;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer-logo {
+    padding-right: 190px;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+
+.copyright-txt {
+    color: #000;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: inherit;
+    font-size: 16px;
+}
+
+.info-text {
+    text-align: left;
+    color: #000;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.person-liste {
+    margin: 0 auto 56px;
+    align-content: center;
+}
+
+.person-liste-liste {
+    display: flex;
+}
+
+.person-liste-item {
+    float: left;
+    background-color: white;
+    border: solid grey 1px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+    max-height: 294px;
+    overflow: hidden;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    transition: max-height .25s ease-in;
+    width: 25%;
+    will-change: max-height, transform;
+}
+
+.person-liste-info {
+    display: flex;
+}
+
+.person-liste-avatar {
+    background-color: #e01220;
+    border-radius: 50%;
+    color: #ce111d;
+    display: flex;
+    font-family: Maison Neue, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 91px;
+    justify-content: center;
+    letter-spacing: .06em;
+    line-height: 1.5;
+    margin-left: -3px;
+    margin-right: 12px;
+    min-width: 91px;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    width: 91px;
+}
+
+.person-liste-avatar:hover {
+    border: solid red 1px;
+}
+
+.person-liste-img {
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.person-liste-main-info {
+    float: left;
+    color: black;
+    margin-right: -12px;
+    overflow: hidden;
+    padding-right: 12px;
+}
+
+.person-liste-navn {
+    color: black;
+    font-family: Noe Text, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
