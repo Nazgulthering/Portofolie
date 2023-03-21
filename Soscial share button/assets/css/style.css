@@ -1,0 +1,181 @@
+.site-container {
+    width: 100vw;
+}
+
+.hamburger-menu {
+    height: 150px;
+    width: 100vw;
+}
+
+.nav-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.row-left {
+    width: 20%;
+}
+
+.row-center {
+    width: 60%;
+}
+
+.row-right {
+    width: 20%;
+    align-items: center;
+}
+
+.menu-logo {
+    overflow: hidden;
+    width: auto;
+    height: 130px;
+}
+
+.share-button,
+.button-facebook {
+    margin: 40px;
+    width: 20%;
+    height: auto;
+    min-height: 20px;
+    padding: 10px;
+}
+
+.footer-container {
+    height: auto;
+    width: 100vw;
+}
+
+.footer-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.col-left {
+    width: 25%;
+}
+
+.col-center {
+    width: 20%;
+}
+
+.col-center-1 {
+    width: 10%;
+}
+
+.col-right {
+    width: 20%;
+    align-items: center;
+}
+
+.fa-facebook {
+    color: #1877f2;
+}
+
+.fa-instagram {
+    color: var(--instagram-color-4);
+}
+
+.fa-pinterest {
+    color: #e60023;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-pinterest:hover {
+    transform: scale(1.2);
+    animation: ease 0.5s scale(1.2) 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card {
+    background: url("https://source.unsplash.com/hWUvlm2NxPc");
+    border-radius: 50%;
+    background-size: cover;
+    filter: grayscale(0%);
+    width: 272px;
+    height: 256px;
+    display: inline-block;
+}
+
+.card:hover {
+    background: url("/BIlder/rose.png");
+    position: relative;
+    background-size: cover;
+    width: 272px;
+    height: 256px;
+    filter: grayscale(20%);
+    border-radius: 50%;
+}
+
+.card-info {
+    color: #fff;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    top: 50%;
+    bottom: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card .card-info {
+    display: none;
+}
+
+.card:hover .card-info {
+    display: inline;
+}
+
+.hero-image {
+    background-image: url(https://cfdagene.no/wp-content/uploads/2022/05/cf_herobilde2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: 50% 50%;
+}
+
+.ct-section-inner-wrap {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1120px;
+}
+
+.hero-text {
+    margin-top: 200px;
+    position: -webkit-sticky;
+}
+
+#headline1 {
+    margin-top: 0px;
+    margin-bottom: -15px;
+    color: var(--dark-color);
+}
+
+#headline1-2 {
+    margin-top: 0px;
+    margin-bottom: -15px;
+    color: var(--primary-color);
+}
+
+.ct-section {
+    width: 100%;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.ct-section>.ct-section-inner-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ct-section-inner-wrap {
+    padding-top: 75px;
+    padding-right: 20px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+}
